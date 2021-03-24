@@ -9,7 +9,7 @@ namespace Bank.Entities
     class Client
     {
         public string Name { get; set; }
-        private Account AccountData { get; set; }
+        public Account AccountData { get; set; }
 
 
         

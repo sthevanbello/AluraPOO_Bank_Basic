@@ -9,7 +9,7 @@ namespace Bank.Entities
     class Agency
     {
         public int Number { get; set; }
-        private List<Client> ListClientData { get; set; } = new List<Client>();
+        public List<Client> ListClientData { get; set; } = new List<Client>();
 
         public Agency()
         {

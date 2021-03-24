@@ -14,6 +14,13 @@ namespace Bank
 
             agency.DBClient();
 
+            double value = 500.00;
+
+            foreach (var item in agency.ListClientData)
+            {
+                item.AccountData.Deposit(value);
+            }
+            agency.DBClient();
 
             Console.ReadKey();
         }
